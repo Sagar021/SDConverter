@@ -16,6 +16,7 @@
 		EBAFF7012317EAAD0007A24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAFF7002317EAAD0007A24F /* Assets.xcassets */; };
 		EBAFF7042317EAAD0007A24F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAFF7022317EAAD0007A24F /* LaunchScreen.storyboard */; };
 		EBAFF70F2317EAAD0007A24F /* SDConverterExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF70E2317EAAD0007A24F /* SDConverterExampleTests.swift */; };
+		EBAFF762231800B40007A24F /* converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF761231800B40007A24F /* converter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EBAFF70A2317EAAD0007A24F /* SDConverterExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDConverterExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAFF70E2317EAAD0007A24F /* SDConverterExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDConverterExampleTests.swift; sourceTree = "<group>"; };
 		EBAFF7102317EAAD0007A24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAFF761231800B40007A24F /* converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				EBAFF6DC2317EA0A0007A24F /* SDConverter.h */,
 				EBAFF6DD2317EA0A0007A24F /* Info.plist */,
+				EBAFF761231800B40007A24F /* converter.swift */,
 			);
 			path = SDConverter;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				TargetAttributes = {
 					EBAFF6D82317EA0A0007A24F = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					EBAFF6E12317EA0A0007A24F = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -319,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAFF762231800B40007A24F /* converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +512,7 @@
 		EBAFF6EE2317EA0A0007A24F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -524,6 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xl.SDConverter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,6 +539,7 @@
 		EBAFF6EF2317EA0A0007A24F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -557,6 +565,7 @@
 		EBAFF6F12317EA0A0007A24F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67XAUDX2M2;
 				INFOPLIST_FILE = SDConverterTests/Info.plist;
@@ -575,6 +584,7 @@
 		EBAFF6F22317EA0A0007A24F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67XAUDX2M2;
 				INFOPLIST_FILE = SDConverterTests/Info.plist;
